@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- DaisyUi and tailwind cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Assignment-3</title>
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              color1: "#212121",
+              color2: "#494949",
+              color3: "#737373",
+              color4: "#A0A0A0",
+              color5: "#E9E9E9",
+              "btn-primary": "#ABEF5F",
+              "btn-primary2": "#ABEF5F80",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .font-manrope {
+        font-family: "Manrope", system-ui;
+      }
+    </style>
+  </head>
+  <body class="font-manrope">
+    <header class="container mx-auto">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li class="text-color2"><a>Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>contact Us</a></li>
+            </ul>
+          </div>
+          <a class="text-3xl text-color1 font-bold">Rinterio </a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li class="text-color2 font-bold"><a>Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <button class=" p-1 ml-2 rounded-full text-xl text-color1  bg-btn-primary w-48 h-12">Book Consult</button>
+        </div>
+      </div>
+
+      <section>
+        <section class="mx-auto md:w-11/12">
+          <div class="banner">
+            <div class="banner-content">
+              <div class="text-center md:w-10/12">
+                <div class="w-1/2 mx-auto">
+                  <img src="/assets/banner.png" alt="" />
+                </div>
+                <h1
+                  class="my-3 text-3xl font-bold lg:my-6 md:text-6xl text-color1"
+                >
+                  The All-in-One Solution For Finding Your Next Rental
+                </h1>
+
+                <p class="text-sm font-semibold lg:text-md text-color33">
+                  The need for Renterio arises from the necessity to streamline
+                  and optimize rental processes, enhance tenant-landlord
+                  communication, simplify property management, and improve the
+                  overall rental experience with user-friendly digital tools.
+                </p>
+                <div
+                  class="flex justify-center w-full p-2 mx-auto mt-4 md:w-44 bg-btn-primary2 rounded-full lg:mt-6"
+                >
+                  <button class="text-xl font-bold text-color2">
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </header>
+
+    <main></main>
+
+    <footer></footer>
+  </body>
+</html>
