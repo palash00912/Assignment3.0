@@ -9,6 +9,14 @@
       rel="stylesheet"
       type="text/css"
     />
+    <!-- fon- awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Assignment-3</title>
     <!-- font family -->
@@ -32,20 +40,78 @@
               "btn-primary": "#ABEF5F",
               "btn-primary2": "#ABEF5F80",
             },
+            fontFamily: {
+              mano: "Manrope",
+            },
           },
         },
       };
     </script>
-    <style>
+    <!-- <style>
       .font-manrope {
         font-family: "Manrope", system-ui;
       }
-    </style>
+    </style> -->
   </head>
-  <body class="font-manrope">
+  <body class="font-mano">
     <header class="container mx-auto">
       <div class="navbar bg-base-100">
         <div class="navbar-start">
+          <i
+            class="fa-solid fa-arrow-right bg-btn-primary p-2 rounded-full -rotate-45 mr-2"
+          ></i>
+          <a class="text-3xl text-color1 font-extrabold">Rinterio </a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li class="text-color2 font-bold"><a>Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end space-x-6 hidden md:flex">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6 border border-[#E9E9E9] rounded-full"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m15.75 15.75-2.489-2.489m0 0a3.375 3.375 0 1 0-4.773-4.773 3.375 3.375 0 0 0 4.774 4.774ZM21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+            />
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6 border border-[#E9E9E9] rounded-full"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+            />
+          </svg>
+
+          <button
+            class="p-1 ml-2 rounded-full text-xl text-color1 bg-btn-primary w-48 h-12 font-extrabold"
+          >
+            Book Consult
+            <i
+              class="fa-solid fa-arrow-right bg-[#1c1c1c] p-1 text-white rounded-full -rotate-45 ml-2"
+            ></i>
+          </button>
+        </div>
+        <div class="text-right">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
               <svg
@@ -65,7 +131,7 @@
             </div>
             <ul
               tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow flex-1 text-center"
             >
               <li class="text-color2"><a>Home</a></li>
               <li><a>Services</a></li>
@@ -74,26 +140,8 @@
               <li><a>contact Us</a></li>
             </ul>
           </div>
-          <a class="text-3xl text-color1 font-bold">Rinterio </a>
-        </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li class="text-color2 font-bold"><a>Home</a></li>
-            <li><a>Services</a></li>
-            <li><a>Portfolio</a></li>
-            <li><a>Blogs</a></li>
-            <li><a>contact Us</a></li>
-          </ul>
-        </div>
-        <div class="navbar-end">
-          <button
-            class="p-1 ml-2 rounded-full text-xl text-color1 bg-btn-primary w-48 h-12"
-          >
-            Book Consult
-          </button>
         </div>
       </div>
-
       <section>
         <section class="mx-auto md:w-11/12">
           <div class="banner">
@@ -119,6 +167,9 @@
                 >
                   <button class="text-xl font-bold text-color2">
                     View Details
+                    <i
+                      class="fa-solid fa-arrow-right bg-[#1c1c1c] p-1 text-white rounded-full -rotate-45 ml-2"
+                    ></i>
                   </button>
                 </div>
               </div>
@@ -129,68 +180,156 @@
     </header>
 
     <main>
-      <section class="bg-[#f9f5f5] py-11 lg:py-24 mt-32">
-        <div class="relative">
-          <div class="hidden lg:flex lg:absolute -top-20 left-9">
-            <img src="/assets/Vector.png" alt="" />
+      <section class="bg-[#F4F4F4] py-12 lg:py-24">
+        <div class="w-11/12 mx-auto">
+         <div class="mx-auto text-center lg:w-3/6">
+           <div class="flex px-4 py-2 mx-auto bg-white w-52 rounded-3xl "> 
+             <div class=""><a href=""><i class="mr-2 fa-solid fa-arrow-right"></i></a></div>
+             <button class="text-xl font-blod text-color2">How we works</button>
+             
+           </div>
+           <h2 class="my-6 text-2xl font-bold md:text-4xl text-balack1">Our Works Process</h2>
+             <p class="text-sm font-semibold lg:text-md text-color3 mb-7">Our work process involves detailed planning, collaborative design, efficient execution, and continuous communication, ensuring high-quality results that meet client expectations and project timelines effectively.</p>
+             
+         </div>
+         <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+           <div>
+             <div class="items-start p-6 bg-[#E7C1D3] rounded-lg card card-compact">
+               <figure>
+                 <img
+                   src="/assets/concept.png"
+                   alt="concept" />
+               </figure>
+               <div class="card-body">
+                 <h2 class="card-title text-xl font-bold text-[#1c1c1c] my-2">Concept</h2>
+                 <p class="text-[#494949] font-semibold">The concept is the foundational idea or vision guiding the design, strategy, and execution of a project.</p>
+                 
+               </div>
+             </div>
+           </div>
+           <div>
+             <div class="items-start p-6 bg-[#EFDA6E] rounded-lg card card-compact">
+               <figure>
+                 <img
+                   src="/assets/flow-chart.png"
+                   alt="flow-chart" />
+               </figure>
+               <div class="card-body">
+                 <h2 class="card-title text-xl font-bold text-[#1c1c1c] my-2">Design Process</h2>
+                 <p class="text-[#494949] font-semibold">The design process: ideation, prototyping, testing, refining, and finalizing solutions.</p>
+                 
+               </div>
+             </div>
+           </div>
+           <div>
+             <div class="items-start p-6 bg-[#A4DAC3] rounded-lg card card-compact">
+               <figure>
+                 <img
+                   src="/assets/vision.png"
+                   alt="vision" />
+               </figure>
+               <div class="card-body">
+                 <h2 class="card-title text-xl font-bold text-[#1c1c1c] my-2">Supervision</h2>
+                 <p class="text-[#494949] font-semibold">TSupervision entails overseeing work, ensuring quality, providing guidance, and resolving issues.</p>
+                 
+               </div>
+             </div>
+           </div>
+           <div>
+             <div class="items-start p-6 bg-[#77AAEA] rounded-lg card card-compact">
+               <figure>
+                 <img
+                   src="/assets/budget-planning.png"
+                   alt="budget" />
+               </figure>
+               <div class="card-body">
+                 <h2 class="card-title text-xl font-bold text-[#1c1c1c] my-2">budget-planning</h2>
+                 <p class="text-[#494949] font-semibold">Budget planning involves allocating resources, forecasting expenses, and managing financial constraints .</p>
+                 
+               </div>
+             </div>
+           </div>
+         </div>
+        </div>
+       </section>
+      <section class="my-24">
+        <div class="w-11/12 mx-auto">
+          <div class="mx-auto text-center lg:w-3/6">
+            <div class="flex px-4 py-2 mx-auto w-60 bg-btn-primary2 rounded-3xl "> 
+              <div class=""><a href=""><i class="mr-2 fa-solid fa-arrow-right"></i></a></div>
+              <button class="font-blod text-color2">Explore our Latest works</button>
+              
+            </div>
+            <h2 class="my-6 text-2xl font-bold md:text-4xl text-balack1">Our Latest Portfolio</h2>
+              <p class="text-sm font-semibold lg:text-md text-color3 mb-7">Our latest portfolio showcases diverse projects highlighting innovative design, craftsmanship, and successful outcomes. It reflects our commitment to excellence and our ability to meet various client needs.</p>
+              
           </div>
-          <div
-            class="justify-between w-11/12 mx-auto text-center md:text-start md:flex"
-          >
-            <div class="flex-1 mb-4 lg:m-0">
-              <div
-                class="flex w-40 px-4 py-2 mx-auto bg-white rounded-3xl md:mx-0"
-              >
-                <div class="">
-                  <a href=""><i class="mr-2 fa-solid fa-arrow-right"></i></a>
-                </div>
-                <button class="text-xl font-blod text-color2">About Us</button>
-              </div>
-              <h2
-                class="md:font-extrabold font-bold text-[#212121] text-2xl md:text-4xl my-6"
-              >
-                We design thoughtful,<br />
-                liveable spaces
-              </h2>
-              <p class="text-sm font-semibold lg:text-md text-color3">
-                Creating spaces that are both functional and comfortable,
-                blending aesthetics with practicality for everyday living.
-              </p>
-              <div class="flex p-6 my-6 bg-white lg:items-center rounded-2xl">
-                <div class="w-24">
-                  <img class="w-full" src="/assets/commercial.png" alt="" />
-                </div>
-                <div class="ml-4 text-start">
-                  <h4 class="text-xl font-blod text-[#7e7e7e] mb-3">
-                    Commercial
-                  </h4>
-                  <p class="text-sm font-semibold lg:text-md text-color3">
-                    Commercial benefits include increased profitability,
-                    improved efficiency, competitive advantage, market
-                    expansion, cost savings, and enhanced customer satisfaction.
-                  </p>
+          <div class="flex flex-wrap gap-6">
+           
+              <div class=" lg:flex p-6 lg:w-8/12 border border-solid border-[#e9e9e9] rounded-2xl">
+                <div class=""><img class="w-full" src="/assets/img1.png" alt=""></div>
+                <div class="mt-3 lg:mt-0 lg:ml-6 lg:w-[65%]">
+                  <h3 class="text-[#494949] text-2xl font-bold ">Commercial</h3>
+                  <p class="text-[#737373] font-semibold  mt-4 mb-5">Commercial benefits include enhanced profitability, operational efficiency, market competitiveness, cost reductions, increased customer satisfaction, and potential for business growth and expansion.</p>
+                  <div class="flex p-2 md:w-52 rounded-2xl"> 
+                    <button class="text-xl font-blod text-color2">View Details</button>
+                    <div class=""><a href=""><i class="p-1 ml-2 text-[#1c1c1c] -rotate-45 rounded-full fa-solid fa-arrow-right bg-green1"></i></a></div>
+                  </div>
                 </div>
               </div>
-              <div class="flex p-6 bg-white lg:items-center rounded-2xl">
-                <div class="w-24">
-                  <img class="w-full" src="/assets/residential.png" alt="" />
+              <div class="p-6  lg:w-[31%]  rounded-2xl border border-solid border-[#e9e9e9]"><img class="w-full" src="/assets/img2.png" alt=""></div>
+              <div class="rounded-2xl p-6 lg:hidden border border-solid border-[#e9e9e9] w-full lg:w-1/4"><img class="w-full" src="/assets/img5.png" alt=""></div>
+            
+              <div class="p-6  hidden lg:flex  lg:w-1/4  w-full border rounded-2xl  border-solid border-[#e9e9e9]"><img class="w-full" src="/assets/img3.png" alt=""></div>
+              <div class=" lg:flex  p-6 rounded-2xl border border-solid border-[#e9e9e9] lg:flex-1">
+                <div class=""><img class="w-full h-full" src="/assets/img4.png" alt=""></div>
+                <div class="mt-3 lg:mt-0 lg:ml-6 lg:w-[60%]">
+                  <h3 class="text-[#494949] text-2xl font-bold ">Commercial</h3>
+                  <p class="text-[#737373] font-semibold  mt-4 mb-5">Commercial benefits: increased profitability, efficiency, market competitiveness, and customer satisfaction.</p>
+                  <div class="flex p-2 md:w-52 rounded-2xl"> 
+                    <button class="text-xl font-blod text-color2">View Details</button>
+                    <div class=""><a href=""><i class="p-1 ml-2 text-[#1c1c1c] -rotate-45 rounded-full fa-solid fa-arrow-right bg-green1"></i></a></div>
+                  </div>
                 </div>
-                <div class="ml-4 text-start">
-                  <h4 class="text-xl font-blod text-[#737373] mb-3">
-                    Residential
-                  </h4>
+              
+  
+          </div>
+          
+          <div class="p-6  sm:flex lg:hidden lg:w-1/4  w-full border rounded-2xl  border-solid border-[#e9e9e9]"><img class="w-full" src="./images/img3.png" alt=""></div>
+          <div class="rounded-2xl p-6 border border-solid border-[#e9e9e9] w-full lg:w-1/4"><img class="w-full" src="./images/img5.png" alt=""></div>
+            
+        </div>
+  
+      </section>
 
-                  <p class="text-sm font-[600] lg:text-md text-color3">
-                    Residential benefits include improved comfort, energy
-                    efficiency, higher property value, safety, community
-                    engagement, and personalized living spaces.
-                  </p>
-                </div>
-              </div>
+      <section class="bg-[url('./images/bg.jpg')] bg-center bg-no-repeat bg-cover py-12 lg:py-24">
+        <div class="w-11/12 mx-auto md:w-9/12">
+          <div class="mx-auto text-center lg:w-3/6">
+            <div class="flex px-4 py-2 mx-auto bg-btn-primary2 w-52 rounded-3xl "> 
+              <div class=""><a href=""><i class="mr-2 fa-solid fa-arrow-right"></i></a></div>
+              <button class="text-xl font-blod text-color2 ">Let’s Connect</button>
+              
             </div>
-            <div class="lg:ml-52">
-              <img class="w-full" src="/assets/Rectangle.png" alt="" />
+            <h2 class="my-6 text-2xl font-bold md:text-4xl text-balack1">Let’s Discuss Next Project</h2>
+              <p class="text-sm font-semibold lg:text-md text-color3 mb-7">If you gain successed in your work, you should discussion becouse you can take different idea. Which is neccessary for a good project. </p>
+              
+          </div>
+          
+          <div>
+            <form action="">
+            
+            <div class="grid gap-6">
+              <div class="w-full"><input class="w-full bg-white border p-5 border-[#E9E9E9] border-solid rounded-[64px] " type="text" name="" id="" placeholder="First Name*" required></div>
+            <div><input class="w-full bg-white p-5 border border-[#E9E9E9] border-solid rounded-[64px]"  type="text" name="" id="" placeholder="Last Name*" required></div>
+            <div><input class="w-full bg-white  p-5 border border-[#E9E9E9] border-solid rounded-[64px]"  type="number" name="" id="" placeholder="Phone Number*" required></div>
+            <div><input class="w-full bg-white p-5 border border-[#E9E9E9] border-solid rounded-[64px]"  type="email" name="" id="" placeholder="Email*" required></div>
+            <div class="lg:col-span-2 "><textarea rows="8"  class=" p-4 w-full bg-white border border-[#E9E9E9] border-solid rounded-[32px]"  name="" id="" placeholder="Write Your Massage Here"></textarea></div>
+            <div class="flex justify-center w-full p-2 mx-auto mt-4 lg:col-span-2 bg-btn-primary rounded-2xl lg:mt-6"> 
+              <button class="text-xl font-blod text-color2">Send Me</button>
+              <div ><a href=""><i class="p-1 ml-2 text-white -rotate-45 rounded-full fa-solid fa-arrow-right bg-color2"></i></a></div>
             </div>
+             </div>
+            </form>
           </div>
         </div>
       </section>
